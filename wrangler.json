@@ -1,0 +1,14 @@
+{
+  "name": "heiwa-kidou-nari",
+  "main": "worker.js",
+  "compatibility_date": "2025-04-01",
+  "durable_objects": {
+    "bindings": [
+      { "name": "ROOMS", "class_name": "GameRoom" },
+      { "name": "MATCHMAKER", "class_name": "Matchmaker" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["GameRoom", "Matchmaker"] }
+  ]
+}
